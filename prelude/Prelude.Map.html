@@ -1,0 +1,340 @@
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+        <title>Prelude.Map – Elixir Prelude v0.0.1</title>
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc">
+
+    <link rel="stylesheet" href="dist/app.css">
+  </head>
+  <body>
+
+    
+    <div class="row row-offcanvas row-offcanvas-left">
+<section id="sidebar" class="col-xs-6 col-sm-3 sidebar-offcanvas">
+  <p class="pull-right visible-xs">
+  <button type="button" class="btn btn-default btn-sm" data-toggle="offcanvas">
+    <span class="glyphicon glyphicon-search"></span>
+  </button>
+  </p>
+
+  <h1 id="full_list_header">
+    
+      <a href="https://github.com/houshuang/elixir-prelude">Elixir Prelude v0.0.1</a>
+    
+  </h1>
+
+  <h2 id="sub_list_header">
+    
+    <a href="overview.html">Overview</a>
+  </h2>
+
+  <div class="nav">
+    
+      <span><a id="modules_list" href="#full_list">Modules</a></span>
+    
+    
+      <span role="presentation" class="disabled">Exceptions</span>
+    
+    
+      <span role="presentation" class="disabled">Protocols</span>
+    
+  </div>
+
+  <div id="search">
+    <div class="col-xs-10">
+      <div class="input-group input-group-sm">
+        <label for="search_field" class="sr-only">Search</label>
+        <input type="text" id="search_field" class="form-control" placeholder="Search" autocomplete="off" autofocus="autofocus" results="0">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+        </span>
+      </div><!-- /input-group -->
+    </div><!-- /.col-xs-10 -->
+    <div class="col-xs-2" id="spinning">
+      <span></span>
+    </div><!-- /.col-xs-2 -->
+  </div><!-- /#search .row -->
+
+  <script src="dist/sidebar_items.js" defer></script>
+
+  <ul id="full_list">
+  </ul>
+
+  <div id="no_results"></div>
+</section><!--/.sidebar-offcanvas -->
+<section id="content" class="col-xs-12 col-sm-9">
+
+
+      <div class="breadcrumbs">
+        <button type="button" class="btn btn-default btn-sm" data-toggle="offcanvas">
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+        Elixir Prelude v0.0.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Prelude.html#content">Prelude</a> &rarr; <a href="Prelude.Map.html#content">Map</a>
+      </div>
+
+      <h1>
+        Prelude.Map
+        
+      </h1>
+
+      <ul class="summary_links">
+        
+          <li><a href="#summary_details">Summary</a></li>
+        
+        
+        
+          <li><a href="#functions_details">Functions</a></li>
+        
+        
+        
+      </ul>
+
+      
+        <section id="moduledoc" class="docstring">
+          <p>Functions operating on <code class="inline">maps</code>.</p>
+
+        </section>
+      
+
+      
+        <a href="https://github.com/houshuang/elixir-prelude/blob/master/lib/prelude/map.ex#L1" class="view_source">Source</a>
+      
+
+      
+        <section id="summary_details" class="details_list">
+          <h1>Summary</h1>
+          <table class="summary">
+            <tr>
+  <td class="summary_signature"><a href="#append_list/3">append_list(map, key, val)</a></td>
+  <td class="summary_synopsis"><p>Appends to an array value in a map, creating one if the key does not exist</p>
+</td>
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#atomify/1">atomify(map)</a></td>
+  <td class="summary_synopsis"><p>Turns all string map keys into atoms, leaving existing atoms alone (only top level)</p>
+</td>
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#deep_put/3">deep_put(map, path, val)</a></td>
+  <td class="summary_synopsis"><p>Put an arbitrarily deep key into an existing map</p>
+</td>
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#del_in/3">del_in(object, path, item)</a></td>
+  <td class="summary_synopsis"><p>Remove a map key arbitrarily deep in a structure, similar to put_in</p>
+</td>
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#group_by/2">group_by(maps, groups)</a></td>
+  <td class="summary_synopsis"><p>Group a map by an array of keys</p>
+</td>
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#stringify/1">stringify(map)</a></td>
+  <td class="summary_synopsis"><p>Turns all atom map keys into strings, leaving existing strings alone (only top level)</p>
+</td>
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#switch/1">switch(map)</a></td>
+  <td class="summary_synopsis"><p>Switch the keys with the values in a map</p>
+</td>
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#to_atom/1">to_atom(x)</a></td>
+  <td class="summary_synopsis"><p>Converts strings to atoms, but leaves existing atoms alone</p>
+</td>
+</tr>
+
+          </table>
+        </section>
+      
+
+      
+
+      
+        <section id="functions_details" class="details_list">
+          <h1>Functions</h1>
+          <section class="detail">
+  <div class="detail_header" id="append_list/3">
+    <span class="signature"><strong>append_list(map, key, val)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#append_list/3" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Appends to an array value in a map, creating one if the key does not exist</p>
+
+  </section>
+  
+    <a href="https://github.com/houshuang/elixir-prelude/blob/master/lib/prelude/map.ex#L91" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="atomify/1">
+    <span class="signature"><strong>atomify(map)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#atomify/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Turns all string map keys into atoms, leaving existing atoms alone (only top level)</p>
+
+  </section>
+  
+    <a href="https://github.com/houshuang/elixir-prelude/blob/master/lib/prelude/map.ex#L75" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="deep_put/3">
+    <span class="signature"><strong>deep_put(map, path, val)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#deep_put/3" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Put an arbitrarily deep key into an existing map</p>
+<p>If a value already exists at that level, it is turned into a list</p>
+<p>For example:</p>
+<pre><code class="iex elixir">iex&gt; map_deep_put(%{}, [:a, :b, :c], &quot;0&quot;)
+%{a: %{b: %{c: &quot;0&quot;}}}
+
+iex&gt; map_deep_put(%{a: %{b: %{c: &quot;1&quot;}}}, [:a, :b, :c, :d], &quot;2&quot;)
+%{a: %{b: %{c: [{:d, &quot;2&quot;}, &quot;1&quot;]}}}</code></pre>
+
+  </section>
+  
+    <a href="https://github.com/houshuang/elixir-prelude/blob/master/lib/prelude/map.ex#L44" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="del_in/3">
+    <span class="signature"><strong>del_in(object, path, item)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#del_in/3" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Remove a map key arbitrarily deep in a structure, similar to put_in</p>
+<p>For example:</p>
+<pre><code class="iex elixir">iex&gt; a = {a: %{b: %{c: %{d: 1, e: 1}}}}
+...&gt; del_in(a, [:a, :b, :c], :d)
+%{a: %{b: %{c: %{e: 1}}}}</code></pre>
+
+  </section>
+  
+    <a href="https://github.com/houshuang/elixir-prelude/blob/master/lib/prelude/map.ex#L69" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="group_by/2">
+    <span class="signature"><strong>group_by(maps, groups)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#group_by/2" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Group a map by an array of keys</p>
+<p>Provide a list of maps, and a list of keys to group by. All maps must
+have all the group_by fields, other fields can vary.</p>
+<p>For example:</p>
+<pre><code class="iex elixir">iex&gt; group_by(
+...&gt;  [%{name: &quot;stian&quot;, group: 1, cat: 2},
+...&gt;   %{name: &quot;per&quot;,   group: 1, cat: 1}],
+...&gt;  [:group, :cat])
+%{1 =&gt;
+  %{1 =&gt; %{cat: 1, group: 1, name: &quot;per&quot;},
+    2 =&gt; %{cat: 2, group: 1, name: &quot;stian&quot;}}}</code></pre>
+
+  </section>
+  
+    <a href="https://github.com/houshuang/elixir-prelude/blob/master/lib/prelude/map.ex#L20" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="stringify/1">
+    <span class="signature"><strong>stringify(map)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#stringify/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Turns all atom map keys into strings, leaving existing strings alone (only top level)</p>
+
+  </section>
+  
+    <a href="https://github.com/houshuang/elixir-prelude/blob/master/lib/prelude/map.ex#L81" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="switch/1">
+    <span class="signature"><strong>switch(map)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#switch/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Switch the keys with the values in a map</p>
+
+  </section>
+  
+    <a href="https://github.com/houshuang/elixir-prelude/blob/master/lib/prelude/map.ex#L96" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="to_atom/1">
+    <span class="signature"><strong>to_atom(x)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#to_atom/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Converts strings to atoms, but leaves existing atoms alone</p>
+
+  </section>
+  
+    <a href="https://github.com/houshuang/elixir-prelude/blob/master/lib/prelude/map.ex#L87" class="view_source">Source</a>
+  
+</section>
+
+        </section>
+      
+
+      
+
+      
+      </section> <!--/content -->
+</div><!--/row -->
+
+    <script src="dist/app.js"></script>
+  </body>
+</html>
+
