@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     
-        <title>Prelude.String – Elixir Prelude v0.0.1</title>
+        <title>Prelude.String – Elixir Prelude v0.0.2</title>
       
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc">
@@ -24,7 +24,7 @@
 
   <h1 id="full_list_header">
     
-      <a href="https://github.com/houshuang/elixir-prelude">Elixir Prelude v0.0.1</a>
+      <a href="https://github.com/houshuang/elixir-prelude">Elixir Prelude v0.0.2</a>
     
   </h1>
 
@@ -74,7 +74,7 @@
         <button type="button" class="btn btn-default btn-sm" data-toggle="offcanvas">
           <span class="glyphicon glyphicon-menu-hamburger"></span>
         </button>
-        Elixir Prelude v0.0.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Prelude.html#content">Prelude</a> &rarr; <a href="Prelude.String.html#content">String</a>
+        Elixir Prelude v0.0.2 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Prelude.html#content">Prelude</a> &rarr; <a href="Prelude.String.html#content">String</a>
       </div>
 
       <h1>
@@ -110,8 +110,18 @@
           <h1>Summary</h1>
           <table class="summary">
             <tr>
+  <td class="summary_signature"><a href="#head/1">head(str)</a></td>
+  <td class="summary_synopsis"><p>Returns the first code point in the string, or <code class="inline">nil</code> if str is empty</p>
+</td>
+</tr>
+<tr>
   <td class="summary_signature"><a href="#is_integer?/1">is_integer?(str)</a></td>
   <td class="summary_synopsis"><p>Checks if a string is the string representation of an integer</p>
+</td>
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#tail/1">tail(str)</a></td>
+  <td class="summary_synopsis"><p>Chops off the first codepoint, and returns the rest of the string</p>
 </td>
 </tr>
 <tr>
@@ -130,6 +140,24 @@
         <section id="functions_details" class="details_list">
           <h1>Functions</h1>
           <section class="detail">
+  <div class="detail_header" id="head/1">
+    <span class="signature"><strong>head(str)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#head/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Returns the first code point in the string, or <code class="inline">nil</code> if str is empty</p>
+
+  </section>
+  
+    <a href="https://github.com/houshuang/elixir-prelude/blob/master/lib/prelude/string.ex#L31" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
   <div class="detail_header" id="is_integer?/1">
     <span class="signature"><strong>is_integer?(str)</strong></span>
     <div class="detail_header_links">
@@ -145,6 +173,25 @@
   </section>
   
     <a href="https://github.com/houshuang/elixir-prelude/blob/master/lib/prelude/string.ex#L23" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="tail/1">
+    <span class="signature"><strong>tail(str)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#tail/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Chops off the first codepoint, and returns the rest of the string.</p>
+<p>  Returns an empty string if <code class="inline">String.length(str) == 1</code>, and <code class="inline">nil</code> if string is empty.</p>
+
+  </section>
+  
+    <a href="https://github.com/houshuang/elixir-prelude/blob/master/lib/prelude/string.ex#L37" class="view_source">Source</a>
   
 </section>
 <section class="detail">
